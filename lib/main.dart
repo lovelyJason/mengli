@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:mengli/binding/initialBinding.dart';
 import 'package:mengli/routes/app_pages.dart';
+import 'package:intl/date_symbol_data_local.dart';
 
 // 设计文档：https://js.design/f/bL-KxM?p=Uk1P92ijbG&mode=design&linkelement=7D9C1046-3121-493F-8B21-41A5CB769AE4
 
 void main() {
-  runApp(const MyApp());
+  // runApp(const MyApp());
+  initializeDateFormatting().then((_) => runApp(const MyApp()));
 }
 
 class MyApp extends StatelessWidget {
